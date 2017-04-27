@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.kpb.restaurant">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:name="junit.zyb.com.restaurant.RestaurantApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Activity.Theme">
+        <activity android:name="junit.zyb.com.restaurant.activity.MainActivity"/>
+        <activity android:name="junit.zyb.com.restaurant.activity.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="junit.zyb.com.restaurant.activity.LoginActivity"/>
+        <activity android:name="junit.zyb.com.restaurant.activity.RegisterActivity"/>
+        <activity android:name="junit.zyb.com.restaurant.activity.FindPassWordActivity"/>
+        <activity android:name="junit.zyb.com.restaurant.activity.PersonInformationActivity"/>
+        <activity android:name="junit.zyb.com.restaurant.activity.PersonUpdatePasswordActivity"/>
+        <activity android:name="junit.zyb.com.restaurant.activity.GoodsInfoActivity"/>
+        <activity android:name="junit.zyb.com.restaurant.activity.UsreinfoActivity">
+        </activity>
+        <activity android:name="junit.zyb.com.restaurant.activity.BuyRecordActivity">
+        </activity>
+        <activity android:name="junit.zyb.com.restaurant.activity.AboutActivity">
+        </activity>
+        <activity android:name="junit.zyb.com.restaurant.activity.ManagerLoginActivity">
+        </activity>
+        <activity android:name="junit.zyb.com.restaurant.activity.ManagerActivity">
+        </activity>
+    </application>
+
+</manifest>
